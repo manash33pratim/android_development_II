@@ -13,15 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassWork"
         tools:targetApi="31">
-
         <activity
-            android:name=".TimePicker"
-            android:exported="true">
+            android:name=".TimePickerExample"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimePicker"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".Header_footer"
@@ -34,7 +39,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ScrollView2"
             android:exported="true" />
@@ -54,7 +59,8 @@
             android:name=".MainActivity"
             android:exported="true" />
 
-        <receiver android:name=".TimePicker$AlarmNPendingIntentDemo$MyAlarmDemo"></receiver>
+        <receiver android:name=".TimePicker$AlarmNPendingIntentDemo$MyAlarmDemo" />
+        <receiver android:name=".MyBroadcast"/>
     </application>
 
 </manifest>
