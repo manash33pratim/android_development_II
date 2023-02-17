@@ -16,26 +16,25 @@ class TimePickerExample : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.time_picker_example)
-        var start=findViewById<Button>(R.id.start)
-        var repeat=findViewById<Button>(R.id.repeat)
-        var et=findViewById<EditText>(R.id.et)
+        val start=findViewById<Button>(R.id.start)
+        val repeat=findViewById<Button>(R.id.repeat)
+        val et=findViewById<EditText>(R.id.et)
         var alarmManager:AlarmManager
-        var cancel=findViewById<Button>(R.id.cancel)
+        val cancel=findViewById<Button>(R.id.cancel)
         val i=Intent(this,MyBroadcast::class.java)
-        var pendingIntent=PendingIntent.getBroadcast(this,
+        val pendingIntent=PendingIntent.getBroadcast(this,
             0,i,PendingIntent.FLAG_UPDATE_CURRENT)
         start.setOnClickListener{
-            var l=et.text.toString().toInt()
+            val l=et.text.toString().toInt()
             alarmManager=getSystemService(Context.ALARM_SERVICE)as AlarmManager
-            alarmManager.set(AlarmManager.RTC_WAKEUP,
-                System.currentTimeMillis()+(l*1000),pendingIntent)
+            alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(l*1000),pendingIntent)
             Toast.makeText(this,"Alarm  set",Toast.LENGTH_LONG).show()
         }
         repeat.setOnClickListener {
-            val e=et.text.toString().toInt()
+            val e=et.text.toString().toLong()
             alarmManager=getSystemService(Context.ALARM_SERVICE)as AlarmManager
             alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()
-                ,5000,pendingIntent)
+                ,e,pendingIntent)
             Toast.makeText(this,"Repeat Alarm is Set ",Toast.LENGTH_LONG).show()
 
         }

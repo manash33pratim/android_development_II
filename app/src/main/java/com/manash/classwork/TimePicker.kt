@@ -16,7 +16,7 @@ import android.widget.Toast
 import java.util.Calendar
 
 //lateinit var setAlarm: Button
-//lateinit var cancelAlarm: Button
+//lateinit var cancelButton: Button
 //lateinit var timePicker: TimePicker
 //lateinit var alarmManager: AlarmManager
 //lateinit var pendingIntent: PendingIntent
