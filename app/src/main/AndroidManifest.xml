@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.manash.classwork">
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassWork"
         tools:targetApi="31">
+        <activity
+            android:name=".NotificationView2"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationView1"
+            android:exported="false" />
         <activity
             android:name=".JobScheduler"
             android:exported="true" />
@@ -27,7 +35,7 @@
         </activity>
         <activity
             android:name=".TimePicker"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Header_footer"
             android:exported="false" />
@@ -62,10 +70,10 @@
         <receiver android:name=".TimePicker$AlarmNPendingIntentDemo$MyAlarmDemo" />
         <receiver android:name=".MyBroadcast" />
 
-        <service android:name=".MyJobService"
+        <service
+            android:name=".MyJobService"
             android:exported="true"
-            android:permission="android.permission.BIND_JOB_SERVICE"
-            />
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>

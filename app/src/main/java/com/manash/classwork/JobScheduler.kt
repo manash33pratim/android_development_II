@@ -31,7 +31,6 @@ class JobScheduler : AppCompatActivity() {
             builder.setRequiresCharging(false)
             jobScheduler!!.schedule(builder.build())
         }
-
         stop.setOnClickListener {
             if (jobScheduler !=null){
                 jobScheduler!!.cancel(123)
