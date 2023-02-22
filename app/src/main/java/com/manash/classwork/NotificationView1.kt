@@ -37,35 +37,35 @@ class NotificationView1 : AppCompatActivity() {
     }
 
     private fun createYourChannel() {
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+//        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+//
+//            notificationChannel= NotificationChannel((channeld,description,
+//            NotificationManager.IMPORTANCE_HIGH)
+//
+//            notificationChannel.enableLights(true)
+//            notificationChannel.enableVibration(true)
+//            notificationChannel.lightColor=Color.GREEN
+//
+//            notificationManager.createNotificationChannel(notificationChannel)
 
-            notificationChannel= NotificationChannel((channeld,description,
-            NotificationManager.IMPORTANCE_HIGH)
+//            builder =Notification.Builder(this,channeld)
+//                .setSmallIcon((R.drawable.splash_afterscreen)
+//                    .setContentTitle(title)
+//                    .setContentText(description)
+//                    .setLargeIcon(R.drawable.spalsh_image)
+//                    .setContentIntent(pendingIntent)
+//                    .setAutoCancel(true)
+//
+ //         )
+//        }else{
 
-            notificationChannel.enableLights(true)
-            notificationChannel.enableVibration(true)
-            notificationChannel.lightColor=Color.GREEN
-
-            notificationManager.createNotificationChannel(notificationChannel)
-
-            builder =Notification.Builder(this,channeld)
-                .setSmallIcon((R.drawable.splash_afterscreen)
-                    .setContentTitle(title)
-                    .setContentText(description)
-                    .setLargeIcon(R.drawable.spalsh_image)
-                    .setContentIntent(pendingIntent)
-                    .setAutoCancel(true)
-
-            )
-        }else{
-
-            builder=Notification.Builder(this)
-                .setSmallIcon((R.drawable.splash_background)
-                    .setContentTitle(title)
-                    .setContentText(description)
-                    .setLargeIcon(R.drawable.spalsh_image)
-                    .setContentIntent(pendingIntent)
-                    .setAutoCancel(true))
-        }
+//            builder=Notification.Builder(this)
+//                .setSmallIcon((R.drawable.splash_background)
+//                    .setContentTitle(title)
+//                    .setContentText(description)
+//                    .setLargeIcon(R.drawable.spalsh_image)
+//                    .setContentIntent(pendingIntent)
+//                    .setAutoCancel(true))
+ //       }
     }
 }
