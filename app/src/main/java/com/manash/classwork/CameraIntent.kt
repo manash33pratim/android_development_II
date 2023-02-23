@@ -21,6 +21,7 @@ class CameraIntent : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.camera_intent)
+
         uploadImage = findViewById(R.id.btn_upload_image)
 
         iv = findViewById(R.id.image_preview)

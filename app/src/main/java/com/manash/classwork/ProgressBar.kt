@@ -18,7 +18,7 @@ class ProgressBar: AppCompatActivity() {
         val pgsBar = findViewById<ProgressBar>(R.id.progressBar)
         val pgsBar1 = findViewById<ProgressBar>(R.id.pbarCirculer)
         val txtView = findViewById<TextView>(R.id.score)
-        val btn: Button = findViewById(R.id.start)
+        val btn = findViewById<Button>(R.id.start)
         val btn1: Button = findViewById(R.id.reset)
         pgsBar1.visibility = View.INVISIBLE
         btn.setOnClickListener{

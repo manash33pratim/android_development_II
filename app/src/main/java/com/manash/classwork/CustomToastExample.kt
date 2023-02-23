@@ -16,6 +16,8 @@ class CustomToastExample : AppCompatActivity() {
 
         val btnToast = findViewById<Button>(R.id.btnToast)
         btnToast.setOnClickListener {
+
+
             val vg:ViewGroup? = findViewById(R.id.custom_toast)
             val inflater = layoutInflater
 
