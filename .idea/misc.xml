@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/drawable/ic_account.xml" value="0.2145" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/drawable/ic_baseline_pan_tool_24.xml" value="0.1225" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_notification_manager_example.xml" value="0.24375" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_notification_view_example.xml" value="0.24375" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_scroll_view2.xml" value="0.259375" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_splash_screen_example.xml" value="0.24375" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_splash_screen_example_main.xml" value="0.24375" />
+        <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/activity_tool_bar_example.xml" value="0.259375" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/camera_intent.xml" value="0.24375" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/custom_toast.xml" value="0.13703703703703704" />
         <entry key="..\:/COLLEGE/6th sem/CSE225/1st class/app/src/main/res/layout/custom_toast_example.xml" value="0.259375" />

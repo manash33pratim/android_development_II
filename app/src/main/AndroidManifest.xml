@@ -15,8 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassWork"
         tools:targetApi="31">
+
         <activity
-            android:name=".ToolBarExample"
+            android:name=".MyNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyNotifictionView"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationManagerExample"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationViewExample"
             android:exported="true" />
         <activity
             android:name=".ToolBar"
@@ -30,12 +40,7 @@
         <activity
             android:name=".CameraIntent"
             android:exported="true" />
-        <activity
-            android:name=".NotificationView2"
-            android:exported="false" />
-        <activity
-            android:name=".NotificationView1"
-            android:exported="false" />
+
         <activity
             android:name=".JobScheduler"
             android:exported="true" />
